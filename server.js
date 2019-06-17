@@ -14,7 +14,7 @@ app.get('/courses', (req, res) => {
                 if (data){
                     res.send(data);
                 }else {
-                    console.log(res.statusCode);
+                    console.log(err);
                 }
             })
         }
@@ -36,7 +36,7 @@ app.get('/courses/:id', (req, res) => {
                         }
                     }
                 }else {
-                    console.log(res.statusCode);
+                    console.log(err);
                 }
             })
         }
@@ -53,7 +53,7 @@ app.get('/exercise', (req, res) => {
                 if (data){
                     res.send(data);
                 }else {
-                    console.log(res.statusCode);
+                    console.log(err);
                 }
             })
         }
@@ -78,7 +78,7 @@ app.get('/coursesExercise/:id', (req, res) => {
                     // console.log(dict_list);
                     res.send(dict_list);
                 }else {
-                    console.log(res.statusCode);
+                    console.log(err);
                 }
             })
         }
